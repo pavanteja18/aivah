@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins',sans-serif;
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   
+}
+
+nav ul li{
+    display: inline;
+    padding: 30px;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+nav ul li a:hover{
+    transform: scale(1.5);
+    transition: transform 0.75s ease 0s;
+    cursor: pointer;
+    color: #0A6EBD;
+    
+    
+}
+
+.top-container{
+    padding: 110px 120px;
+    font-size: 1.3rem;
+    background-image: url("https://wallpapercave.com/wp/wp8623049.png");
+    background-position: 100%;
+    color: #fff;
+}
+
+.top-container p{
+    width: 45%;
+    padding: 10px 0;
+}
+
+.top-container a{
+    margin: 5px 0 0 0;
+    display: inline-block;
+    border: solid #0A6EBD;
+    background-color: #0A6EBD;
+    color: #fff;
+    border-radius: 10px;
+    padding : 5px 5px;
+}
+
+.top-container a:hover{
+    color: #0A6EBD;
+    background-color: #000;
+    cursor: pointer;
+    transition: 0.75s ease 0s;
+    transform: scale(1.1);
+}
+
+marquee{
+    font-size: 1.1rem;
+    padding: 50px 0;
+    /* background-color: #0A6EBD; */
+    color: #000;
+
+}
+
+.announcement{
+    padding: 210px 120px;
+    font-size: 1.7rem;
+    color: #000;
+    text-align: center;
+}
+
+.countdown{
+    padding: 110px 120px;
+    text-align: center;
+    background-color: #0A6EBD;
+    color: #fff;
+}
+
+.timer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.9rem;
+}
+
+.timer div{
+    padding: 30px 40px;
+}
+
+.vision{
+    padding : 110px 120px;
+    font-size: 1.2rem;
+    background-color: #fff;
+    color: #000;
+}
+
+.vision-dept{
+    padding: 70px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.vision-dept .img{
+    width: 210px;
+    height: 210px;
+}
+
+.vision-dept div{
+    padding: 10px 50px;
+    text-align: center;
+}
+
+.event-calender{
+    padding: 110px 120px;
+    background-color: #0A6EBD;
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.middle-container{
+    padding: 110px 120px;
+    font-size: 1.2rem;
+}
+.middle-container h1{
+    padding: 20px 0;
+    font-weight: 900;
+}
+.middle-container p{
+    width: 90%;
+}
+
+.outer{
+    padding: 110px 120px;
+    background-color: #0A6EBD;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.outer ul li a img{
+    width: 40px;
+    height: auto;
+    padding: 5px 0;
+}
+
+.outer ul li{
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.outer ul h1{
+    font-size: 20px;
+}
+
+@media (max-width: 768px){
+    header{
+        width: 100%;
+    }
+    .top-container{
+        padding: 20px;
+        width: 100%;
+        background-image: none;
+        background-color: #0A6EBD;
+        margin-inline: auto;
+    }
+    .timer div{
+        font-size: 0.7rem;
+        padding: 10px;
+    }
+    .vision{
+        padding: 30px;
+    }
+    .vision-dept{
+        display: inline-block;
+        text-align: center;
+    }
+
+    .middle-container{
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    .outer{
+        font-size: 0.5rem;
+        padding: 10px;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 375px){
+    header{
+        width: 100%;
+    }
+    .top-container{
+        padding: 20px;
+        width: 100%;
+        background-image: none;
+        background-color: #0A6EBD;
+        margin-inline: auto;
+    }
+    header ul li{
+        font-size: 0.7rem;
+        padding: 10px;
+    }
+    .countdown{
+        padding: 20px;
+    }
+    .timer div{
+        padding: 10px;
+    }
+    .vision{
+        padding: 30px;
+    }
+    .vision-dept{
+        display: inline-block;
+        text-align: center;
+    }
+
+    .middle-container{
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    .outer{
+        font-size: 0.5rem;
+        padding: 10px;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 320px){
+    header{
+        width: 100%;
+    }
+    .top-container{
+        padding: 20px;
+        width: 100%;
+        background-image: none;
+        background-color: #0A6EBD;
+        margin-inline: auto;
+    }
+
+    .vision-dept div{
+        padding: 10px 10px;
+    }
+
+    header ul li{
+        font-size: 0.7rem;
+        padding: 10px;
+    }
+    .countdown{
+        padding: 20px;
+    }
+    .timer div{
+        padding: 10px;
+    }
+    .vision{
+        padding: 30px;
+    }
+    .vision-dept{
+        display: inline-block;
+        text-align: center;
+    }
+
+    .middle-container{
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    .outer{
+        font-size: 0.5rem;
+        padding: 10px;
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 1920px){
+    .top-container{
+        padding: 40px;
+        width: 100%;
+        background-image: none;
+        background-color: #000000;
+        margin-inline: auto;
+    }
+}
